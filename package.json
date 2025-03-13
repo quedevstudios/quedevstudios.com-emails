@@ -1,12 +1,47 @@
 {
+  "name": "quedevstudios.com-emails",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "Email templates for quedevstudios.com",
+  "author": {
+    "name": "Blaque Allen",
+    "email": "quedevstudios@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/quedevstudios/quedevstudios.com-emails/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quedevstudios/quedevstudios.com-emails.git"
+  },
   "scripts": {
     "dev": "maizzle serve",
-    "build": "maizzle build production"
+    "build": "maizzle build production",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix && prettier --write --ignore-unknown .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": [
+      "bun lint:fix"
+    ]
   },
   "dependencies": {
     "@maizzle/framework": "^5.0.6",
     "tailwindcss-preset-email": "^1.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/bun": "^1.2.5",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
   }
 }

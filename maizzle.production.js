@@ -13,7 +13,7 @@
 export default {
   build: {
     output: {
-      path: 'build_production',
+      path: "build_production",
     },
   },
   css: {
@@ -22,4 +22,4 @@ export default {
     shorthand: true,
   },
   prettify: true,
-}
+};

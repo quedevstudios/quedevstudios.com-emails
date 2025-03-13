@@ -20,14 +20,8 @@
           <tr class="text-right">
             <each loop="social in socials">
               <td>
-                <a href="{{ social.url }}">
-                  <img
-                    src="{{ social.icon.src }}"
-                    src-production="{{ social.icon.srcProduction }}"
-                    alt="{{ social.name }}"
-                    class="w-5 h-5"
-                  />
-                  <!-- {{ social.svg }} -->
+                <a href="{{ social.url }}" class="text-gray-300 no-underline">
+                  <i class="text-lg ti {{ social.icon }}"></i>
                 </a>
               </td>
             </each>

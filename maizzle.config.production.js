@@ -11,11 +11,6 @@
 
 /** @type {import('@maizzle/framework').Config} */
 export default {
-  build: {
-    output: {
-      path: "build",
-    },
-  },
   css: {
     inline: true,
     purge: true,

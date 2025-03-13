@@ -16,10 +16,11 @@
     "url": "https://github.com/quedevstudios/quedevstudios.com-emails.git"
   },
   "scripts": {
-    "builder": "maizzle build production",
+    "builder": "maizzle build production && bun package",
     "dev": "maizzle serve",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix && prettier --write --ignore-unknown .",
+    "package": "bun run ./scripts/package.ts",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -29,6 +30,7 @@
   },
   "dependencies": {
     "@maizzle/framework": "^5.0.6",
+    "cheerio": "^1.0.0",
     "tailwindcss-preset-email": "^1.4.0"
   },
   "devDependencies": {

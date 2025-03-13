@@ -11,8 +11,14 @@
 
 /** @type {import('@maizzle/framework').Config} */
 export default {
+  dist: {
+    path: "dist",
+  },
   build: {
     content: ["emails/**/*.html"],
+    output: {
+      path: "build",
+    },
     static: {
       source: ["images/**/*.*"],
       destination: "images",
@@ -33,11 +39,7 @@ export default {
         facebook: {
           name: "Facebook",
           url: "https://facebook.com/quedevstudios",
-          icon: {
-            src: "brand-facebook.svg",
-            srcProduction:
-              "https://quedevstudios.com/assets/email/icons/brand-facebook.svg",
-          },
+          icon: "ti-brand-facebook-filled",
         },
       },
     },

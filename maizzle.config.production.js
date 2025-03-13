@@ -13,7 +13,7 @@
 export default {
   build: {
     output: {
-      path: "build_production",
+      path: "build",
     },
   },
   css: {

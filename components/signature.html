@@ -1,0 +1,20 @@
+<script props>
+  module.exports = {
+    type: props.type || "from-team",
+    name: props.name || "Company Name",
+  };
+</script>
+
+<if condition="type === 'from-team'">
+  <p class="m-0 text-gray-200">Best wishes,</p>
+  <div class="mt-2">
+    <span class="font-semibold text-gray-300">{{ name }}</span>
+  </div>
+</if>
+
+<if condition="type === 'to-team'">
+  <p class="m-0 text-gray-200">Cheers,</p>
+  <div class="mt-2">
+    <span class="font-semibold text-gray-300">{{ name }} Team</span>
+  </div>
+</if>

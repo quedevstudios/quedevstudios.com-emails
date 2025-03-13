@@ -1,0 +1,39 @@
+<script props>
+  module.exports = {
+    name: props.name || "Company Name",
+    socials: props.socials || [],
+  };
+</script>
+
+<x-divider />
+
+<table class="w-full text-gray-300">
+  <tr>
+    <td>
+      <p class="m-0 text-xs">
+        &copy; {{ new Date().getFullYear() }} {{ name }}. All rights reserved.
+      </p>
+    </td>
+    <if condition="socials">
+      <td>
+        <table class="w-full">
+          <tr class="text-right">
+            <each loop="social in socials">
+              <td>
+                <a href="{{ social.url }}">
+                  <img
+                    src="{{ social.icon.src }}"
+                    src-production="{{ social.icon.srcProduction }}"
+                    alt="{{ social.name }}"
+                    class="w-5 h-5"
+                  />
+                  <!-- {{ social.svg }} -->
+                </a>
+              </td>
+            </each>
+          </tr>
+        </table>
+      </td>
+    </if>
+  </tr>
+</table>

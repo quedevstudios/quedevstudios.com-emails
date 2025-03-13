@@ -1,0 +1,24 @@
+<script props>
+  module.exports = {
+    logo: props.logo || "https://via.placeholder.com/150",
+    logoAlt: props.logoAlt || "Company Logo",
+    website: props.website || "#",
+  };
+</script>
+
+<table class="w-full text-gray-300">
+  <tr>
+    <td>
+      <a href="{{ website }}">
+        <img
+          src="{{ logo }}"
+          src-production="{{ logo }}"
+          height="16px"
+          alt="{{ logoAlt }}"
+        />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<x-divider />

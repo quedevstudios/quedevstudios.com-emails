@@ -16,8 +16,8 @@
     "url": "https://github.com/quedevstudios/quedevstudios.com-emails.git"
   },
   "scripts": {
+    "builder": "maizzle build production",
     "dev": "maizzle serve",
-    "build": "maizzle build production",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix && prettier --write --ignore-unknown .",
     "prepare": "husky"

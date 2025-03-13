@@ -1,0 +1,27 @@
+---
+title: New Contact Submission
+preheader: A new contact form submission has been received.
+signature: to-team
+---
+
+<x-default>
+  <h1 class="m-0 mb-4 text-2xl/8 text-gray-100 font-semibold">Hey Team!</h1>
+
+  <p class="m-0 mb-8 text-base/6 text-gray-300">
+    A new inquiry just came in! Here are the details:
+  </p>
+
+  <ul class="space-y-2">
+    <li class="text-gray-400"><strong>Name:</strong> {name}</li>
+    <li class="text-gray-400"><strong>Company:</strong> {company}</li>
+    <li class="text-gray-400"><strong>Email:</strong> {email}</li>
+    <li class="text-gray-400"><strong>Phone:</strong> {phone}</li>
+    <li class="text-gray-400">
+      <strong>Contact Preference:</strong> {preference}
+    </li>
+    <li class="text-gray-400"><strong>Subject:</strong> {subject}</li>
+    <li class="text-gray-400"><strong>Message:</strong> {message}</li>
+  </ul>
+
+  <p class="mt-8 text-gray-300">Make sure to follow up soon!</p>
+</x-default>

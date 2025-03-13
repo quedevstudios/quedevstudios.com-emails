@@ -1,6 +1,6 @@
 {
   "name": "quedevstudios.com-emails",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "Email templates for quedevstudios.com",
@@ -21,7 +21,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix && prettier --write --ignore-unknown .",
     "package": "bun run ./scripts/package.ts",
-    "publisher": "changelogen --bump",
+    "publisher": "changelogen --release",
     "prepare": "husky"
   },
   "lint-staged": {

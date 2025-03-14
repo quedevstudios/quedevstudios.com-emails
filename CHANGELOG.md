@@ -1,5 +1,25 @@
 # Changelog
 
+## v1.0.2
+
+[compare changes](https://github.com/quedevstudios/quedevstudios.com-emails/compare/v1.0.1...v1.0.2)
+
+### 🩹 Fixes
+
+- Package script and wording in emails ([20f1aec](https://github.com/quedevstudios/quedevstudios.com-emails/commit/20f1aec))
+
+### 📦 Build
+
+- Use simple command instead ([527ab26](https://github.com/quedevstudios/quedevstudios.com-emails/commit/527ab26))
+
+### 🏡 Chore
+
+- **release:** V1.0.1 ([038c71f](https://github.com/quedevstudios/quedevstudios.com-emails/commit/038c71f))
+
+### ❤️ Contributors
+
+- QueDev Studios <quedevstudios@gmail.com>
+
 ## v1.0.1
 
 [compare changes](https://github.com/quedevstudios/quedevstudios.com-emails/compare/v1.0.1...v1.0.1)

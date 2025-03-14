@@ -88,7 +88,7 @@ const createTypeEmails = (emails: Email[]): string => {
 
   return emails
     .map((email) => {
-      if (!email.types) {
+      if (!email.types || Object.keys(email.types).length === 0) {
         return "";
       }
 
